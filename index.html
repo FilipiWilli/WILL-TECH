@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manutenção de Computadores</title>
+  <meta name="description" content="Serviços de manutenção de computadores com atendimento rápido, confiável e preço justo.">
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white shadow-lg fixed w-full z-10">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold">WILL TECH</h1>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="hover:text-yellow-400">Início</a>
+        <a href="#services" class="hover:text-yellow-400">Serviços</a>
+        <a href="#contact" class="hover:text-yellow-400">Contato</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden text-yellow-400 text-3xl">&#9776;</button>
+    </div>
+    <div id="mobileMenu" class="md:hidden bg-blue-800 hidden px-6 pb-4">
+      <a href="#home" class="block py-2 text-yellow-400">Início</a>
+      <a href="#services" class="block py-2 text-yellow-400">Serviços</a>
+      <a href="#contact" class="block py-2 text-yellow-400">Contato</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="pt-24 bg-gradient-to-r from-blue-900 to-blue-600 text-white">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 py-16">
+      <div class="md:w-1/2 space-y-6">
+        <h2 class="text-4xl font-bold">Manutenção de Computadores Profissional</h2>
+        <p class="text-lg">Atendimento rápido, confiável e com preços justos para que seu computador volte a funcionar como novo.</p>
+        <a href="#contact" class="inline-block mt-4 bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold shadow hover:bg-yellow-300">
+          Solicite seu Orçamento
+        </a>
+      </div>
+      <div class="md:w-1/2 mt-10 md:mt-0">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80" alt="Técnico trabalhando em computador" class="rounded-2xl shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="services" class="max-w-7xl mx-auto px-6 py-16">
+    <h3 class="text-3xl font-bold text-center mb-12">Nossos Serviços</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:scale-105 transition">
+        <img src="https://cdn.awsli.com.br/600x1000/2159/2159117/produto/247057535/manute-epbactu9m6.jpg" />
+        <h4 class="text-xl font-semibold mb-2">Formatação e Otimização</h4>
+        <p class="text-gray-600">Seu computador mais rápido e limpo, sem perda de desempenho.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:scale-105 transition">
+        <img src="https://s2-techtudo.glbimg.com/lYmrOWr2lCLlseQhuZUfNNnNGRo=/0x0:4496x3000/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/y/E/4DBAwpQ02ibOlMIXwBwA/marc-pezin-ujmfxaddmye-unsplash.jpg" />
+        <h4 class="text-xl font-semibold mb-2">Troca de Peças</h4>
+        <p class="text-gray-600">Substituímos HDs, SSDs, placas de vídeo e outros componentes.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-lg p-6 text-center hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Remoção de Vírus" class="rounded-xl mb-4 h-48 w-full object-cover" />
+        <h4 class="text-xl font-semibold mb-2">Remoção de Vírus</h4>
+        <p class="text-gray-600">Segurança total contra vírus e malwares, mantendo seus dados protegidos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contact" class="bg-blue-900 text-white py-16">
+    <div class="max-w-3xl mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-6 text-center">Entre em Contato</h3>
+      <p class="mb-8 text-center">Agende sua manutenção agora mesmo! Atendemos com rapidez e eficiência.</p>
+      <form action="https://formspree.io/f/mvgqvpvq" method="POST" class="bg-blue-800 p-8 rounded-xl shadow-lg max-w-lg mx-auto space-y-6">
+        <label class="block">
+          <span class="text-yellow-400 font-semibold">Nome</span>
+          <input type="text" name="name" required class="mt-1 block w-full rounded-md bg-blue-700 border border-blue-600 px-3 py-2 text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Seu nome completo" />
+        </label>
+        <label class="block">
+          <span class="text-yellow-400 font-semibold">E-mail</span>
+          <input type="email" name="_replyto" required class="mt-1 block w-full rounded-md bg-blue-700 border border-blue-600 px-3 py-2 text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="seuemail@exemplo.com" />
+        </label>
+        <label class="block">
+          <span class="text-yellow-400 font-semibold">Mensagem</span>
+          <textarea name="message" required rows="4" class="mt-1 block w-full rounded-md bg-blue-700 border border-blue-600 px-3 py-2 text-white placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Descreva seu problema ou dúvida"></textarea>
+        </label>
+        <button type="submit" class="w-full bg-yellow-400 text-black font-bold py-3 rounded-lg shadow hover:bg-yellow-300 transition">
+          Enviar Mensagem
+        </button>
+      </form>
+      <p class="text-center mt-6">Ou fale diretamente no WhatsApp:</p>
+      <div class="text-center mt-2">
+        <a href="https://wa.me/5511992349660" target="_blank" class="inline-block bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold shadow hover:bg-yellow-300 transition">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+    <p>© 2025 TechManutenção - Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
